@@ -79,7 +79,7 @@ function GalleryCard({ g, first, last, busy, onSave, onPublish, onMove, onDelete
         <Field label="Caption" htmlFor={`gc-${g.id}`}><input id={`gc-${g.id}`} className="a-input" maxLength={200} value={caption} onChange={(e) => setCaption(e.target.value)} /></Field>
         <Field label="Type" htmlFor={`gk-${g.id}`}><select id={`gk-${g.id}`} className="a-input" value={kind} onChange={(e) => setKind(e.target.value as GalleryItem['kind'])}>{KINDS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></Field>
         <label className="a-check"><input type="checkbox" checked={featured} onChange={(e) => setFeatured(e.target.checked)} /> Feature this photo (shown first and larger)</label>
-        <div className="a-row wrap">
+        <div className="a-row a-wrapflex">
           <button className="a-btn primary" disabled={busy || !dirty} onClick={() => onSave(edited)}>Save details</button>
           <button className="a-btn" disabled={busy || (g.status === 'draft' && g.is_sample)} onClick={() => onPublish(edited)}>{g.status === 'published' ? 'Unpublish' : 'Publish'}</button>
           <button className="a-btn" disabled={busy || first} onClick={() => onMove(-1)} aria-label="Move up">↑</button>
@@ -145,7 +145,7 @@ function FeedbackCard({ t, api, busy, first, last, onSave, onPublish, onMove, on
         <Field label="Customer label (optional)" htmlFor={`fl-${t.id}`} hint="Keep it anonymous, for example “Customer, Kadri” or “Office order”."><input id={`fl-${t.id}`} className="a-input" maxLength={60} value={label} onChange={(e) => setLabel(e.target.value)} /></Field>
         <Field label="Caption (optional)" htmlFor={`fc-${t.id}`}><input id={`fc-${t.id}`} className="a-input" maxLength={300} value={caption} onChange={(e) => setCaption(e.target.value)} /></Field>
         <label className="a-check"><input type="checkbox" checked={reviewed} onChange={(e) => setReviewed(e.target.checked)} /> I’ve checked this screenshot for names, phone numbers, profile photos, addresses and other private details.</label>
-        <div className="a-row wrap">
+        <div className="a-row a-wrapflex">
           <button className="a-btn primary" disabled={busy || !dirty} onClick={() => onSave(edited)}>Save details</button>
           <button className="a-btn" disabled={busy || dirty || (t.status === 'draft' && !t.privacy_reviewed)} onClick={() => onPublish(edited)}
             title={dirty ? 'Save your changes first' : !t.privacy_reviewed ? 'Tick the privacy check and save first' : undefined}>{t.status === 'published' ? 'Unpublish' : 'Publish'}</button>

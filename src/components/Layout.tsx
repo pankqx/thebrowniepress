@@ -41,15 +41,15 @@ export function Layout() {
       {settings?.announcement && !settings.ordering_paused && <div className="announce" role="status">{settings.announcement}</div>}
       <header className="site-header">
         <div className="wrap">
-          <Link to="/" className="wordmark" aria-label="The Brownie Press, home">
-            <span>The</span><span>Brownie</span><span>Press</span>
+          <Link to="/" className="wordmark" aria-label="The Brownie Press">
+            <span>The</span> <span>Brownie</span> <span>Press</span>
           </Link>
           <nav className="nav" aria-label="Main">
             {NAV.map((n) => <NavLink key={n.to} to={n.to}>{n.label}</NavLink>)}
           </nav>
           <div className="head-actions">
-            <Link key={bumps} to="/cart" className={`cart-link ${bumps ? 'bump' : ''}`} aria-label={`Your order, ${pieces} ${pieces === 1 ? 'piece' : 'pieces'}`}>
-              Order <span className="count" aria-hidden="true">{pieces}</span>
+            <Link key={bumps} to="/cart" className={`cart-link ${bumps ? 'bump' : ''}`}>
+              Order <span className="count">{pieces}</span><span className="sr-only">{pieces === 1 ? ' piece' : ' pieces'}</span>
             </Link>
             <button className="menu-btn" aria-expanded={open} aria-controls="mobile-nav" onClick={() => setOpen((o) => !o)}>
               {open ? 'Close' : 'Menu'}

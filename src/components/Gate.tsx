@@ -3,9 +3,9 @@ import { useData } from '../data/DataContext'
 import type { PublicData } from '../lib/types'
 
 /** Renders children once public data is loaded; otherwise a reserved-height skeleton or a recoverable error. */
-export function Gate({ children, minHeight = 320 }: { children: (d: PublicData) => ReactNode; minHeight?: number }) {
+export function Gate({ children, minHeight = 0 }: { children: (d: PublicData) => ReactNode; minHeight?: number }) {
   const { state, reload } = useData()
-  if (state.status === 'loading') return <div className="wrap" style={{ padding: '40px var(--gutter)' }}><div className="skeleton" style={{ minHeight }} aria-busy="true" aria-label="Loading" /></div>
+  if (state.status === 'loading') return <div className="wrap" style={{ padding: '40px var(--gutter)' }}><div className="skeleton" style={{ minHeight: minHeight || '85vh' }} aria-busy="true" aria-label="Loading" /></div>
   if (state.status === 'error')
     return (
       <div className="wrap" style={{ padding: '56px var(--gutter)' }}>

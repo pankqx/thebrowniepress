@@ -73,7 +73,8 @@ export function BuyBox({ product, settings }: { product: Product; settings: Sett
   )
 }
 
-export function ProductCard({ product, settings, index, sizes }: { product: Product; settings: Settings; index: number; sizes?: string }) {
+export function ProductCard({ product, settings, index, sizes, level = 3 }: { product: Product; settings: Settings; index: number; sizes?: string; level?: 2 | 3 }) {
+  const H = level === 2 ? 'h2' : 'h3'
   const img = product.images[0]
   const prices = product.variants.filter((v) => v.available).map((v) => v.price)
   return (
@@ -88,7 +89,7 @@ export function ProductCard({ product, settings, index, sizes }: { product: Prod
           {product.label && <span className="tag red">{product.label}</span>}
           {!product.available && <span className="tag">Unavailable</span>}
         </div>
-        <h3><Link to={`/menu/${product.slug}`}>{product.name}</Link></h3>
+        <H><Link to={`/menu/${product.slug}`}>{product.name}</Link></H>
         <p className="desc">{product.description}</p>
         {prices.length > 0 && <p className="hint" style={{ marginTop: 6 }}>From {formatINR(Math.min(...prices))}{product.is_sample ? ' (sample price)' : ''}</p>}
       </div>

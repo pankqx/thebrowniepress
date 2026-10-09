@@ -1,0 +1,164 @@
+{
+  "ranAt": "2026-10-09T16:28:41.025Z",
+  "results": [
+    {
+      "page": "/",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 1583,
+      "lcp_ms": 2183,
+      "tbt_ms": 63,
+      "cls": 0,
+      "si_ms": 1583,
+      "transfer_kB": 340,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "mobile",
+        "throttling": "simulate",
+        "cpuSlowdown": 4,
+        "rtt": 150,
+        "kbps": 1638.4,
+        "emulated": "412x823"
+      },
+      "failed": []
+    },
+    {
+      "page": "/menu",
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 1413,
+      "lcp_ms": 2013,
+      "tbt_ms": 26,
+      "cls": 0,
+      "si_ms": 1413,
+      "transfer_kB": 289,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "mobile",
+        "throttling": "simulate",
+        "cpuSlowdown": 4,
+        "rtt": 150,
+        "kbps": 1638.4,
+        "emulated": "412x823"
+      },
+      "failed": []
+    },
+    {
+      "page": "/bulk",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 1557,
+      "lcp_ms": 2157,
+      "tbt_ms": 26,
+      "cls": 0,
+      "si_ms": 1557,
+      "transfer_kB": 262,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "mobile",
+        "throttling": "simulate",
+        "cpuSlowdown": 4,
+        "rtt": 150,
+        "kbps": 1638.4,
+        "emulated": "412x823"
+      },
+      "failed": []
+    },
+    {
+      "page": "/about",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 1614,
+      "lcp_ms": 2214,
+      "tbt_ms": 12,
+      "cls": 0.031,
+      "si_ms": 1614,
+      "transfer_kB": 262,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "mobile",
+        "throttling": "simulate",
+        "cpuSlowdown": 4,
+        "rtt": 150,
+        "kbps": 1638.4,
+        "emulated": "412x823"
+      },
+      "failed": []
+    },
+    {
+      "page": "/cart",
+      "perf": 97,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 63,
+      "fcp_ms": 1546,
+      "lcp_ms": 2446,
+      "tbt_ms": 18,
+      "cls": 0,
+      "si_ms": 1546,
+      "transfer_kB": 262,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "mobile",
+        "throttling": "simulate",
+        "cpuSlowdown": 4,
+        "rtt": 150,
+        "kbps": 1638.4,
+        "emulated": "412x823"
+      },
+      "failed": [
+        "is-crawlable"
+      ]
+    }
+  ],
+  "bundle": {
+    "initial": [
+      {
+        "file": "index-BJSYNATS.css",
+        "gz_kB": 5
+      },
+      {
+        "file": "index-DtDqN_w_.js",
+        "gz_kB": 97.4
+      }
+    ],
+    "initial_js_gz_kB": 97.4,
+    "initial_css_gz_kB": 5,
+    "lazy": [
+      {
+        "file": "AdminApp--_RDnwNH.css",
+        "gz_kB": 1.8
+      },
+      {
+        "file": "AdminApp-xzweKVKY.js",
+        "gz_kB": 13.2
+      },
+      {
+        "file": "demoApi-D_ZC-Brw.js",
+        "gz_kB": 0.7
+      },
+      {
+        "file": "supabaseApi-8EFQbTK6.js",
+        "gz_kB": 54.7
+      }
+    ]
+  }
+}

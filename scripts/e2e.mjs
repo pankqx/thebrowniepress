@@ -15,6 +15,7 @@ async function test(id, name, fn, { reducedMotion } = {}) {
   const page = await ctx.newPage()
   const errors = []
   page.on('pageerror', (e) => errors.push(e.message))
+  page.on('console', (m) => { if (m.type() === 'error' && /Content Security Policy|Refused to/.test(m.text())) errors.push('CSP: ' + m.text()) })
   const t0 = Date.now()
   try { await fn(page, ctx); if (errors.length) throw new Error('page errors: ' + errors.join('; ')); results.push({ id, name, ok: true, ms: Date.now() - t0 }); console.log('PASS', id, name) }
   catch (e) { results.push({ id, name, ok: false, error: String(e.message).split('\n')[0] }); console.log('FAIL', id, name, '\n   ', String(e.message).split('\n').slice(0, 3).join('\n    ')) }

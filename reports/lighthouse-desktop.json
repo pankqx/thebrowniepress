@@ -1,0 +1,87 @@
+{
+  "ranAt": "2026-10-09T16:29:00.546Z",
+  "results": [
+    {
+      "page": "/",
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 387,
+      "lcp_ms": 608,
+      "tbt_ms": 0,
+      "cls": 0,
+      "si_ms": 402,
+      "transfer_kB": 340,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "desktop",
+        "throttling": "simulate",
+        "cpuSlowdown": 1,
+        "rtt": 40,
+        "kbps": 10240,
+        "emulated": "1350x940"
+      },
+      "failed": []
+    },
+    {
+      "page": "/menu",
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp_ms": 386,
+      "lcp_ms": 466,
+      "tbt_ms": 0,
+      "cls": 0,
+      "si_ms": 386,
+      "transfer_kB": 289,
+      "lcp_el": null,
+      "env": {
+        "lighthouse": "13.5.0",
+        "chrome": "Chrome/141.0.0.0",
+        "form": "desktop",
+        "throttling": "simulate",
+        "cpuSlowdown": 1,
+        "rtt": 40,
+        "kbps": 10240,
+        "emulated": "1350x940"
+      },
+      "failed": []
+    }
+  ],
+  "bundle": {
+    "initial": [
+      {
+        "file": "index-BJSYNATS.css",
+        "gz_kB": 5
+      },
+      {
+        "file": "index-DtDqN_w_.js",
+        "gz_kB": 97.4
+      }
+    ],
+    "initial_js_gz_kB": 97.4,
+    "initial_css_gz_kB": 5,
+    "lazy": [
+      {
+        "file": "AdminApp--_RDnwNH.css",
+        "gz_kB": 1.8
+      },
+      {
+        "file": "AdminApp-xzweKVKY.js",
+        "gz_kB": 13.2
+      },
+      {
+        "file": "demoApi-D_ZC-Brw.js",
+        "gz_kB": 0.7
+      },
+      {
+        "file": "supabaseApi-8EFQbTK6.js",
+        "gz_kB": 54.7
+      }
+    ]
+  }
+}

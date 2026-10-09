@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { SITE_URL } from '../config/env'
+import { OG_IMAGE, SITE_URL } from '../config/env'
 
 const BRAND = 'The Brownie Press'
 
@@ -24,8 +24,8 @@ export function useSeo(opts: { title?: string; description: string; path: string
       if (!link) { link = document.createElement('link'); link.rel = 'canonical'; document.head.appendChild(link) }
       link.href = url
       setMeta('meta[property="og:url"]', 'property', 'og:url', url)
-      setMeta('meta[property="og:image"]', 'property', 'og:image', SITE_URL + '/og-image.jpg')
-      setMeta('meta[name="twitter:image"]', 'name', 'twitter:image', SITE_URL + '/og-image.jpg')
+      setMeta('meta[property="og:image"]', 'property', 'og:image', SITE_URL + OG_IMAGE)
+      setMeta('meta[name="twitter:image"]', 'name', 'twitter:image', SITE_URL + OG_IMAGE)
     } else link?.remove()
   }, [title, description, path, noindex])
 }

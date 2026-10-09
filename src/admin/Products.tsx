@@ -51,7 +51,7 @@ export function ProductsPage() {
                 {!p.available && <Badge kind="warn">Unavailable</Badge>}
               </div>
             </div>
-            <div className="a-row wrap">
+            <div className="a-row a-wrapflex">
               <Link className="a-btn" to={`/admin/products/${p.id}`}>Edit</Link>
               <button className="a-btn" disabled={busy} onClick={() => toggle(p)}>{p.status === 'published' ? 'Unpublish' : 'Publish'}</button>
               <button className="a-btn" disabled={busy || filter !== 'all'} aria-label={`Move ${p.name} up`} onClick={() => run(() => api.reorder('products', moved(all, p.id, -1)))}>↑</button>
@@ -173,7 +173,7 @@ function Editor({ initial, isNew }: { initial: Product; isNew: boolean }) {
         <Field label="Description" htmlFor="pd" error={errs.fields.description}>
           <textarea id="pd" className="a-input" rows={3} maxLength={1000} value={p.description} onChange={(e) => set('description', e.target.value)} />
         </Field>
-        <div className="a-row wrap">
+        <div className="a-row a-wrapflex">
           <Field label="Category" htmlFor="pc">
             <select id="pc" className="a-input" value={p.category_id ?? ''} onChange={(e) => set('category_id', e.target.value || null)}>
               <option value="">No category</option>{data.categories.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
@@ -201,7 +201,7 @@ function Editor({ initial, isNew }: { initial: Product; isNew: boolean }) {
                 <Field label="In steps of" htmlFor={`vs-${v.id}`}><NumInput id={`vs-${v.id}`} label="Quantity step" value={v.qty_step} onChange={(n) => setVar(v.id, { qty_step: n })} /></Field>
               </div>
               {errs.variants[v.id] && <p className="a-err" role="alert">{errs.variants[v.id]}</p>}
-              <div className="a-row wrap">
+              <div className="a-row a-wrapflex">
                 <label className="a-check"><input type="checkbox" checked={v.available} onChange={(e) => setVar(v.id, { available: e.target.checked })} /> Available</label>
                 <span className="grow" />
                 <button type="button" className="a-btn" onClick={() => moveVar(i, -1)} disabled={i === 0} aria-label="Move option up">↑</button>
@@ -227,7 +227,7 @@ function Editor({ initial, isNew }: { initial: Product; isNew: boolean }) {
                   <input id={`ia-${im.id}`} className="a-input" maxLength={200} value={im.alt} onChange={(e) => set('images', p.images.map((x) => (x.id === im.id ? { ...x, alt: e.target.value } : x)))} />
                 </Field>
               </div>
-              <div className="a-row wrap">
+              <div className="a-row a-wrapflex">
                 <button type="button" className="a-btn" onClick={() => moveImg(i, -1)} disabled={i === 0} aria-label="Move photo up">↑</button>
                 <button type="button" className="a-btn" onClick={() => moveImg(i, 1)} disabled={i === p.images.length - 1} aria-label="Move photo down">↓</button>
                 <button type="button" className="a-btn danger" onClick={() => set('images', p.images.filter((x) => x.id !== im.id))}>Remove</button>

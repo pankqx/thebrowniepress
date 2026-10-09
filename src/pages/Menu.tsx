@@ -35,7 +35,7 @@ function MenuBody({ d }: { d: PublicData }) {
       )}
       {d.settings.ordering_paused && <p className="notice warn" role="status" style={{ marginBottom: 20 }}>Orders are paused right now. Browse the menu and come back soon.</p>}
       {list.length ? (
-        <div className="grid-products">{list.map((p, i) => <ProductCard key={p.id} product={p} settings={d.settings} index={i} />)}</div>
+        <div className="grid-products">{list.map((p, i) => <ProductCard key={p.id} product={p} settings={d.settings} index={i} level={2} />)}</div>
       ) : (
         <div className="empty">
           <h2>Nothing on the menu yet</h2>

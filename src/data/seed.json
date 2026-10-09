@@ -1,0 +1,78 @@
+{
+  "_note": "SAMPLE DATA ONLY. Products, prices and imagery are provisional placeholders derived from the owner's reference menu and must be confirmed in the admin dashboard before launch. Single source for demo mode and supabase/seed.sql (npm run seed:sql).",
+  "settings": {
+    "whatsapp_number": "+919071983473",
+    "instagram_url": null,
+    "location_text": "Mangalore, Karnataka",
+    "brand_description": "Rich, fudgy brownies baked in a home kitchen in Mangalore.",
+    "announcement": null,
+    "ordering_paused": false,
+    "pickup_enabled": true,
+    "pickup_note": null,
+    "delivery_enabled": true,
+    "delivery_areas": [],
+    "delivery_note": null,
+    "bulk_min": 20,
+    "business_hours": null,
+    "lead_time_note": null,
+    "contact_email": null,
+    "founder_name": null,
+    "founder_story": "The Brownie Press started in a home kitchen in Mangalore and has been baking for about a year. Every order is baked at home, and the owner personally handles each one over WhatsApp. A cafe is the long-term dream; for now, it is home baking, done with care.",
+    "ingredients_note": null,
+    "orders_milestone": 300,
+    "menu_confirmed": false
+  },
+  "categories": [
+    { "id": "7a1f0c10-0000-4000-8000-000000000001", "name": "Brownies", "slug": "brownies", "sort_order": 1 }
+  ],
+  "products": [
+    {
+      "id": "7a1f0c10-0000-4000-8000-0000000000a1",
+      "slug": "triple-chocolate-brownies",
+      "name": "Triple Chocolate Brownies",
+      "description": "Rich, fudgy brownies loaded with three kinds of chocolate for the ultimate chocolate lover.",
+      "category_id": "7a1f0c10-0000-4000-8000-000000000001",
+      "status": "published", "is_sample": true, "featured": true, "sort_order": 1, "available": true,
+      "label": null, "ingredients": null, "allergens": null, "lead_time": null,
+      "variants": [
+        { "id": "7a1f0c10-0000-4000-8000-0000000001a1", "name": "Minis", "price": 30, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001a2", "name": "Regular", "price": 40, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+      ],
+      "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002a1", "path": "static:p-triple", "alt": "Placeholder image: stacked fudgy chocolate brownies with chocolate chips", "sort_order": 1 }]
+    },
+    {
+      "id": "7a1f0c10-0000-4000-8000-0000000000a2",
+      "slug": "cheesecake-brownies",
+      "name": "Cheesecake Brownies",
+      "description": "A perfect blend of rich brownie and creamy cheesecake swirled to perfection.",
+      "category_id": "7a1f0c10-0000-4000-8000-000000000001",
+      "status": "published", "is_sample": true, "featured": true, "sort_order": 2, "available": true,
+      "label": null, "ingredients": null, "allergens": null, "lead_time": null,
+      "variants": [
+        { "id": "7a1f0c10-0000-4000-8000-0000000001b1", "name": "Minis", "price": 35, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001b2", "name": "Regular", "price": 45, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+      ],
+      "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002b1", "path": "static:p-cheesecake", "alt": "Placeholder image: a cheesecake-swirled brownie on a plate", "sort_order": 1 }]
+    },
+    {
+      "id": "7a1f0c10-0000-4000-8000-0000000000a3",
+      "slug": "choco-ganache-brownies",
+      "name": "Choco Ganache Brownies",
+      "description": "Decadent brownies topped with silky smooth chocolate ganache for an extra indulgent bite.",
+      "category_id": "7a1f0c10-0000-4000-8000-000000000001",
+      "status": "published", "is_sample": true, "featured": true, "sort_order": 3, "available": true,
+      "label": null, "ingredients": null, "allergens": null, "lead_time": null,
+      "variants": [
+        { "id": "7a1f0c10-0000-4000-8000-0000000001c1", "name": "Minis", "price": 35, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001c2", "name": "Regular", "price": 45, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+      ],
+      "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002c1", "path": "static:p-ganache", "alt": "Placeholder image: a brownie topped with glossy chocolate ganache", "sort_order": 1 }]
+    }
+  ],
+  "gallery": [
+    { "id": "7a1f0c10-0000-4000-8000-0000000003a1", "path": "static:texture", "bucket": "public", "caption": "Placeholder: fudgy crumb close-up", "kind": "texture", "featured": true, "status": "published", "is_sample": true, "sort_order": 1 },
+    { "id": "7a1f0c10-0000-4000-8000-0000000003a2", "path": "static:drip", "bucket": "public", "caption": "Placeholder: warm chocolate drip", "kind": "product", "featured": false, "status": "published", "is_sample": true, "sort_order": 2 },
+    { "id": "7a1f0c10-0000-4000-8000-0000000003a3", "path": "static:stack-dark", "bucket": "public", "caption": "Placeholder: stacked brownies", "kind": "batch", "featured": false, "status": "published", "is_sample": true, "sort_order": 3 }
+  ],
+  "testimonials": []
+}

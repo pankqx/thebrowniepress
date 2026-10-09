@@ -1,0 +1,2 @@
+{ "rewrites": [{ "source": "/((?!assets/|img/|fonts/).*)", "destination": "/index.html" }],
+  "headers": [{ "source": "/(img|fonts|assets)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }] }

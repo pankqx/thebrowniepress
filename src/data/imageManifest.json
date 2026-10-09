@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "widths": [
+      480,
+      624
+    ],
+    "ratio": [
+      624,
+      730
+    ]
+  },
+  "stack-dark": {
+    "widths": [
+      480,
+      900
+    ],
+    "ratio": [
+      900,
+      900
+    ]
+  },
+  "texture": {
+    "widths": [
+      360,
+      520
+    ],
+    "ratio": [
+      520,
+      460
+    ]
+  },
+  "drip": {
+    "widths": [
+      480,
+      654
+    ],
+    "ratio": [
+      654,
+      380
+    ]
+  },
+  "p-triple": {
+    "widths": [
+      338
+    ],
+    "ratio": [
+      338,
+      278
+    ]
+  },
+  "p-cheesecake": {
+    "widths": [
+      338
+    ],
+    "ratio": [
+      338,
+      274
+    ]
+  },
+  "p-ganache": {
+    "widths": [
+      338
+    ],
+    "ratio": [
+      338,
+      268
+    ]
+  }
+}

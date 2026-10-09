@@ -1,0 +1,35 @@
+@font-face { font-family: 'Anton'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/anton-400.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/inter-400.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 700; font-style: normal; font-display: swap; src: url('/fonts/inter-700.woff2') format('woff2'); }
+@font-face { font-family: 'Caveat'; font-weight: 700; font-style: normal; font-display: swap; src: url('/fonts/caveat-700.woff2') format('woff2'); }
+
+:root {
+  /* Brand */
+  --chocolate: #24110d;
+  --espresso: #120b09;
+  --ivory: #f8f3ea;
+  --red: #b71919;
+  --caramel: #c58a52;
+
+  /* Surfaces & text (contrast pairs verified in docs/ACCESSIBILITY.md) */
+  --bg: var(--ivory);
+  --bg-alt: #efe7d9;          /* ivory on a slightly deeper stock */
+  --ink: var(--espresso);     /* 17.9:1 on ivory */
+  --ink-muted: #5a4a42;       /* 7.4:1 on ivory */
+  --rule: rgba(18, 11, 9, 0.18);
+  --on-dark: var(--ivory);    /* 17:1 on espresso */
+  --on-dark-muted: #d0c2b3;   /* 10.9:1 on espresso */
+  --accent: var(--red);       /* 6.0:1 on ivory (text ok); ivory on red 6.0:1 */
+  --focus: #1a5fd0;
+
+  --font-display: 'Anton', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  --font-script: 'Caveat', 'Segoe Script', cursive;
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1280px;
+  --radius: 2px;
+  --ease: cubic-bezier(0.22, 0.8, 0.26, 1);
+  --t-fast: 160ms;
+  --t-med: 420ms;
+}

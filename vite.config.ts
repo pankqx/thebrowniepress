@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_')
   const siteUrl = (env.VITE_SITE_URL ?? '').replace(/\/$/, '')
   return {
+    base: env.VITE_BASE || '/',
     plugins: [react(), seoFiles(siteUrl)],
     build: { target: 'es2020', sourcemap: false, cssCodeSplit: true },
     server: { host: '127.0.0.1', port: 5173 },

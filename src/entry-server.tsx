@@ -6,7 +6,7 @@ import { App } from './App'
 
 export function render(url: string): string {
   return renderToString(
-    <StaticRouter location={url}>
+    <StaticRouter location={url} basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <App />
     </StaticRouter>,
   )

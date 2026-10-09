@@ -15,7 +15,8 @@
     "images": "node scripts/prepare-images.mjs",
     "seed:sql": "node scripts/gen-seed-sql.mjs",
     "e2e": "node scripts/e2e.mjs",
-    "perf": "node scripts/perf.mjs"
+    "perf": "node scripts/perf.mjs",
+    "build:pages": "VITE_DATA_MODE=demo VITE_BASE=/thebrowniepress/ npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.3",

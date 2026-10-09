@@ -47,7 +47,7 @@ export default function AdminApp() {
           {[['', 'Overview'], ['products', 'Products'], ['categories', 'Categories'], ['gallery', 'Gallery'], ['feedback', 'Feedback'], ['settings', 'Settings'], ['launch', 'Launch check']].map(([to, label]) => (
             <NavLink key={to} to={`/admin/${to}`} end={to === ''}>{label}</NavLink>
           ))}
-          <a href="/" target="_blank" rel="noopener noreferrer">View website ↗</a>
+          <a href={import.meta.env.BASE_URL} target="_blank" rel="noopener noreferrer">View website ↗</a>
         </nav>
         <main className="a-main">
           <Routes>

@@ -23,6 +23,9 @@ npm run perf               # Lighthouse mobile+desktop -> reports/
 | `demo` | `VITE_DATA_MODE=demo`, or dev with no backend | localStorage DB; admin password is not secure. Sample products shown with banners. |
 | `unconfigured` | Production build, no backend | Safe fallback page; admin disabled. |
 
+## Live demo (GitHub Pages)
+https://pankqx.github.io/thebrowniepress/ — demo build with sample data; the admin at `/admin` uses a local fake backend (no real security). Deployed by `.github/workflows/pages.yml`; build locally with `npm run build:pages`. Not the production deployment.
+
 ## Going live
 See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) (Supabase setup, owner account, hosting, domain) and
 [docs/ADMIN_GUIDE.md](docs/ADMIN_GUIDE.md) (owner manual). The dashboard's **Launch readiness** page blocks

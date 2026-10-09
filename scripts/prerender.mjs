@@ -9,10 +9,13 @@ try {
   const { render } = await vite.ssrLoadModule('/src/entry-server.tsx')
   const shell = existsSync('dist/app.html') ? readFileSync('dist/app.html', 'utf8') : readFileSync('dist/index.html', 'utf8')
   writeFileSync('dist/app.html', shell)
-  const html = render('/')
+  const base = process.env.VITE_BASE || '/'
+  const html = render(base)
   const out = shell.replace('<div id="root"></div>', `<div id="root">${html}</div>`)
   if (out === shell) throw new Error('root element not found in dist/index.html')
   writeFileSync('dist/index.html', out)
+  // GitHub Pages has no rewrite rules; it serves 404.html for unknown paths, so the SPA shell doubles as 404.html.
+  if (process.env.VITE_BASE) writeFileSync('dist/404.html', shell)
   console.log(`prerendered home (${html.length} bytes of HTML)`)
 } finally {
   await vite.close()

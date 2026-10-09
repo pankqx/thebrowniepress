@@ -36,14 +36,14 @@ export function Media({ path, alt, sizes = '100vw', priority, className, style }
     const name = path.slice(7)
     const m = MAN[name]
     if (!m) return <div className="img-fallback">Image unavailable</div>
-    const set = (ext: string) => m.widths.map((w) => `/img/${name}-${w}.${ext} ${w}w`).join(', ')
+    const set = (ext: string) => m.widths.map((w) => `${import.meta.env.BASE_URL}img/${name}-${w}.${ext} ${w}w`).join(', ')
     const largest = m.widths[m.widths.length - 1]
     const h = Math.round((m.ratio[1] / m.ratio[0]) * largest)
     return (
       <picture>
         <source type="image/avif" srcSet={set('avif')} sizes={sizes} />
         <source type="image/webp" srcSet={set('webp')} sizes={sizes} />
-        <img src={`/img/${name}-${largest}.webp`} srcSet={set('webp')} sizes={sizes} width={largest} height={h} {...common} />
+        <img src={`${import.meta.env.BASE_URL}img/${name}-${largest}.webp`} srcSet={set('webp')} sizes={sizes} width={largest} height={h} {...common} />
       </picture>
     )
   }

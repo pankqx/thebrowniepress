@@ -73,7 +73,7 @@ function blank(d: AdminData): Product {
     variants: [], images: [],
   }
 }
-const newVariant = (productId: string, n: number): Variant => ({ id: newId(), product_id: productId, name: '', price: 0, min_qty: 1, qty_step: 1, available: true, sort_order: n })
+const newVariant = (productId: string, n: number): Variant => ({ id: newId(), product_id: productId, name: '', price: 0, min_qty: 20, qty_step: 1, available: true, sort_order: n })
 
 type Errs = { fields: Record<string, string>; variants: Record<string, string> }
 export function validateProduct(p: Product, d: AdminData): Errs {

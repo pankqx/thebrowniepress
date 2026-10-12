@@ -35,8 +35,8 @@
       "status": "published", "is_sample": true, "featured": true, "sort_order": 1, "available": true,
       "label": null, "ingredients": null, "allergens": null, "lead_time": null,
       "variants": [
-        { "id": "7a1f0c10-0000-4000-8000-0000000001a1", "name": "Minis", "price": 30, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
-        { "id": "7a1f0c10-0000-4000-8000-0000000001a2", "name": "Regular", "price": 40, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+        { "id": "7a1f0c10-0000-4000-8000-0000000001a1", "name": "Minis", "price": 30, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001a2", "name": "Regular", "price": 40, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 2 }
       ],
       "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002a1", "path": "static:p-triple", "alt": "Placeholder image: stacked fudgy chocolate brownies with chocolate chips", "sort_order": 1 }]
     },
@@ -49,8 +49,8 @@
       "status": "published", "is_sample": true, "featured": true, "sort_order": 2, "available": true,
       "label": null, "ingredients": null, "allergens": null, "lead_time": null,
       "variants": [
-        { "id": "7a1f0c10-0000-4000-8000-0000000001b1", "name": "Minis", "price": 35, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
-        { "id": "7a1f0c10-0000-4000-8000-0000000001b2", "name": "Regular", "price": 45, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+        { "id": "7a1f0c10-0000-4000-8000-0000000001b1", "name": "Minis", "price": 35, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001b2", "name": "Regular", "price": 45, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 2 }
       ],
       "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002b1", "path": "static:p-cheesecake", "alt": "Placeholder image: a cheesecake-swirled brownie on a plate", "sort_order": 1 }]
     },
@@ -63,8 +63,8 @@
       "status": "published", "is_sample": true, "featured": true, "sort_order": 3, "available": true,
       "label": null, "ingredients": null, "allergens": null, "lead_time": null,
       "variants": [
-        { "id": "7a1f0c10-0000-4000-8000-0000000001c1", "name": "Minis", "price": 35, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 1 },
-        { "id": "7a1f0c10-0000-4000-8000-0000000001c2", "name": "Regular", "price": 45, "min_qty": 1, "qty_step": 1, "available": true, "sort_order": 2 }
+        { "id": "7a1f0c10-0000-4000-8000-0000000001c1", "name": "Minis", "price": 35, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 1 },
+        { "id": "7a1f0c10-0000-4000-8000-0000000001c2", "name": "Regular", "price": 45, "min_qty": 20, "qty_step": 1, "available": true, "sort_order": 2 }
       ],
       "images": [{ "id": "7a1f0c10-0000-4000-8000-0000000002c1", "path": "static:p-ganache", "alt": "Placeholder image: a brownie topped with glossy chocolate ganache", "sort_order": 1 }]
     }

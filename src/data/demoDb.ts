@@ -3,7 +3,7 @@
 import seed from './seed.json'
 import type { AdminData } from '../lib/types'
 
-const KEY = 'bp-demo-db-v1'
+const KEY = 'bp-demo-db-v2'
 
 export function loadDemo(): AdminData {
   try {
